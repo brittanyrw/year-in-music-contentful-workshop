@@ -177,7 +177,19 @@ Once saved, go to one of the albums you've created and:
 
 You will now be able to see the updated title. To manually exit Draft Mode, you can navigate to `/api/disable-draft` in the browser.
 
-### Step 8. Deploy on Vercel
+### Step 8. Coding Challenges
+
+#### Challenge One
+The content model includes the `category` field, can you figure out how to add the categories as labels on the individual album pages?
+Hint: You must pull in the category via the API first, then render it. 
+
+#### Challenge Two
+Add a new field to the content model that would make sense for the project and render it on the front end. 
+
+#### Mega Challenge
+Because many albums might have the same artist, it makes sense to make `Artist` a content type. Make an `Artist` content type, create the individual template page in the code (Hint: the 'posts' folder is creating the page for albums so it is an example to look at), and render the `Artist` fields that you create on the page. Then replace the `Artist Name` field in the `Album` content type with a reference field to the new `Artist` content type.
+
+### Step 9. Deploy on Vercel
 
 You can deploy this app to the cloud with [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
